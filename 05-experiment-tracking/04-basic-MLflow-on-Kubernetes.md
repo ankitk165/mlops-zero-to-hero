@@ -9,8 +9,9 @@ https://community-charts.github.io/docs/charts/mlflow/basic-installation
 5. helm repo update
 6. kubectl create namespace mlflow
 7. helm install mlflow community-charts/mlflow --namespace mlflow --set backendStore.defaultSqlitePath=/mlflow/data/mlflow.db
-8.  kubectl get pods -n mlflow
+8.  ```kubectl get pods -n mlflow
     kubectl describe pod mlflow-56655c448-xm8tg -n mlflow
     kubectl get all -n mlflow
     kubectl describe service/mlflow -n mlflow
+    ```
 9. kubectl port-forward svc/mlflow -n mlflow 8080:80
