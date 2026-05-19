@@ -22,7 +22,7 @@ helpful-cmds:
 
 2. kubectl run postgres-postgresql-client --rm --tty -i --restart='Never' --namespace mlflow --image registry-1.docker.io/bitnami/postgresql:latest --env="PGPASSWORD=$POSTGRES_PASSWORD"       --command -- psql --host postgres-postgresql -U postgres -d mlflow -p 5432
 
-\l
+\l 
 \c database
 \dt
 \d table
@@ -42,6 +42,7 @@ B. Referencing db-creds from secret
 
 3. vi values-mlflow.yaml
 
+3.1 
 backendStore:
   databaseMigration: true
   postgres:
