@@ -17,6 +17,9 @@ A. mlflow-with-internal-postgres
   --set backendStore.postgres.user=postgres \
   --set backendStore.postgres.password=$POSTGRES_PASSWORD
 
+5.kubectl port-forward svc/mlflow -n mlflow 8080:80
+6. http://localhost:8080/
+
 helpful-cmds:
 1. echo $POSTGRES_HOST
 
