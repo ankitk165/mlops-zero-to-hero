@@ -15,3 +15,4 @@ https://community-charts.github.io/docs/charts/mlflow/basic-installation
     kubectl describe service/mlflow -n mlflow
     ```
 9. kubectl port-forward svc/mlflow -n mlflow 8080:80
+10. http://localhost:8080/
