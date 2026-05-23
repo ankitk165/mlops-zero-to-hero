@@ -112,3 +112,7 @@ knative
 - helps in serverless resource management on k8s cluster through its crds
 - pod can be scaled to 0, but cold start problem
 - richer monitoring setup with gateway like istio and otel setup
+
+chat link
+https://copilot.microsoft.com/conversations/join/vYnKGzBsU7DLV2cPhLyRv
+https://copilot.microsoft.com/conversations/join/KHY1LFT6a3yiNSsCnWs4i
